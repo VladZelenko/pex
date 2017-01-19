@@ -54,6 +54,66 @@ img {
   width: 100%;
   height: auto; }
 
-.wrapper {
+.container {
   width: 95%;
   margin: 0 auto; }
+
+@media screen and (min-width: 970px) {
+  .container {
+    width: 80%;
+    margin: 0 auto; } }
+
+.intro {
+  background: url("../../img/head-bg.png") no-repeat;
+  background-size: cover;
+  min-height: 100vh; }
+
+.header {
+  height: 100px;
+  padding: 30px;
+  border-bottom: 1px solid #372a37; }
+  .header h1.logo {
+    margin-top: 10px;
+    display: inline;
+    float: left; }
+    .header h1.logo img {
+      width: 40px; }
+  .header .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  .header .nav li a,
+  .header #touch-menu {
+    display: block;
+    padding: 10px 15px;
+    color: #ffffff;
+    font: 700 14px/24px "nevis", sans-serif; }
+  .header .nav li a:hover {
+    border-bottom: 2px solid #ffffff; }
+  .header #touch-menu:hover {
+    color: #ffffff; }
+  .header #touch-menu {
+    display: none; }
+  @media (min-width: 320px) and (max-width: 970px) {
+    .header .nav {
+      display: none; }
+      .header .nav li a {
+        border-top: 1px solid #eee;
+        background: #ccc;
+        color: #090909; }
+        .header .nav li a:hover {
+          background: #f0f0f0;
+          color: #ffffff;
+          border-left: 3px solid yeelow; }
+    .header .nav li:first-child a {
+      border-top: none; }
+    .header #touch-menu {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px; }
+      .header #touch-menu .fa-bars {
+        font-size: 22px; } }
+
+.hero h2 {
+  color: #ffffff;
+  font: 400 50px/70px #ffffff; }

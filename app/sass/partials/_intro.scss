@@ -1,0 +1,66 @@
+.intro {
+	background: url('../../img/head-bg.png')no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+}
+.header {
+	height: 100px;
+	padding: 30px;
+	border-bottom: 1px solid #372a37;
+	h1.logo {
+		margin-top: 10px;
+		display:inline;
+		float: left;
+		img {width: 40px;}
+	}
+
+
+	.nav {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.nav li a,
+	#touch-menu {
+		display: block;
+		padding: 10px 15px;
+		color: $secondary_font_color;
+		font: 700 14px/24px $primary_font;
+	}
+
+	.nav li a:hover {border-bottom: 2px solid $secondary_font_color;}
+	#touch-menu:hover {color: $secondary_font_color;}
+	#touch-menu {display: none;}
+
+	@media (min-width: 320px) and (max-width: 970px) {
+		.nav {display: none;
+			li a {
+				border-top: 1px solid #eee;
+				background: #ccc;
+				color: $primary_font_color;
+
+				&:hover {
+					background: #f0f0f0;
+					color: $secondary_font_color;
+					border-left: 3px solid yeelow;
+				}
+			}
+		}
+		.nav li:first-child a {border-top: none;}
+		#touch-menu {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 20px;
+
+			.fa-bars {font-size: 22px;}
+		}
+	}
+}
+
+.hero {
+	h2 {
+		color: $secondary_font_color;
+		font: 400 50px/70px $secondary_font_color;
+	}
+}

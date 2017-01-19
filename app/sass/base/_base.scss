@@ -1,27 +1,18 @@
-*, *:after, *:before {
-	box-sizing: border-box;
-}
-
-li {
-	list-style: none;
-}
-
-
-a {
-	text-decoration: none;
-}
-
+*, *:after, *:before {box-sizing: border-box;}
+li {list-style: none;}
+a {text-decoration: none;}
 img {
 	width: 100%;
 	height: auto;
 }
-.wrapper {
+.container {
 	width: 95%;
 	margin: 0 auto;
 }
 
 @media screen and (min-width: 970px) {
-	.wrapper {
-
+.container {
+	width: 80%;
+	margin: 0 auto;
 }
 }
