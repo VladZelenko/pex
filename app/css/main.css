@@ -58,15 +58,48 @@ img {
   width: 95%;
   margin: 0 auto; }
 
+body {
+  color: #ffffff; }
+
 @media screen and (min-width: 970px) {
   .container {
     width: 80%;
     margin: 0 auto; } }
 
+.primary-btn {
+  display: block;
+  width: 280px;
+  height: 60px;
+  color: #ffffff;
+  font: 700 18px/60px "OpenSans", sans-serif;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  background: #8824cd;
+  border-radius: 30px;
+  text-align: center; }
+  .primary-btn:hover {
+    color: #8824cd;
+    background: #ffffff;
+    border: 2px solid #8824cd;
+    transition: all .4s ease-in; }
+
 .intro {
   background: url("../../img/head-bg.png") no-repeat;
   background-size: cover;
   min-height: 100vh; }
+  .intro .hero {
+    margin-top: 215px;
+    max-width: 705px;
+    min-width: 300px;
+    width: auto;
+    text-align: center; }
+    .intro .hero .title {
+      font: 400 50px "OpenSans", sans-serif; }
+    .intro .hero p {
+      padding-bottom: 70px;
+      font: 400 12px "OpenSans", sans-serif; }
+    .intro .hero .primary-btn {
+      width: 280px;
+      margin: 50px auto 20px auto; }
 
 .header {
   height: 100px;
@@ -98,13 +131,13 @@ img {
     .header .nav {
       display: none; }
       .header .nav li a {
-        border-top: 1px solid #eee;
-        background: #ccc;
+        border-top: 1px solid #ccc;
+        background: #ffffff;
         color: #090909; }
         .header .nav li a:hover {
           background: #f0f0f0;
-          color: #ffffff;
-          border-left: 3px solid yeelow; }
+          color: #090909;
+          border-left: 3px solid #8824cd; }
     .header .nav li:first-child a {
       border-top: none; }
     .header #touch-menu {
@@ -113,7 +146,3 @@ img {
       margin-top: 20px; }
       .header #touch-menu .fa-bars {
         font-size: 22px; } }
-
-.hero h2 {
-  color: #ffffff;
-  font: 400 50px/70px #ffffff; }

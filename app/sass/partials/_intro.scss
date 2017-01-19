@@ -2,6 +2,25 @@
 	background: url('../../img/head-bg.png')no-repeat;
 	background-size: cover;
 	min-height: 100vh;
+	.hero {
+		margin-top: 215px;
+		max-width: 705px;
+		min-width: 300px;
+		width: auto;
+		text-align: center;
+
+		.title {font: 400 50px $secondary_font;}
+		p {
+			padding-bottom: 70px;
+			font: 400 12px $secondary_font;
+		}
+		.primary-btn {
+			width: 280px;
+			margin: 50px auto 20px auto;
+		}
+	}
+
+
 }
 .header {
 	height: 100px;
@@ -36,14 +55,14 @@
 	@media (min-width: 320px) and (max-width: 970px) {
 		.nav {display: none;
 			li a {
-				border-top: 1px solid #eee;
-				background: #ccc;
+				border-top: 1px solid #ccc;
+				background: $secondary_font_color;
 				color: $primary_font_color;
 
 				&:hover {
 					background: #f0f0f0;
-					color: $secondary_font_color;
-					border-left: 3px solid yeelow;
+					color: $primary_font_color;
+					border-left: 3px solid #8824cd;
 				}
 			}
 		}
@@ -55,12 +74,5 @@
 
 			.fa-bars {font-size: 22px;}
 		}
-	}
-}
-
-.hero {
-	h2 {
-		color: $secondary_font_color;
-		font: 400 50px/70px $secondary_font_color;
 	}
 }
