@@ -1,0 +1,21 @@
+{
+  "name": "pex",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Vlad Zelenko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/VladZelenko/pex",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.1"
+  }
+}
