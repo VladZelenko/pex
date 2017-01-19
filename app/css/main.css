@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,7 +57,8 @@ img {
 
 .container {
   width: 95%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  clear: both; }
 
 body {
   color: #ffffff; }
@@ -66,31 +68,15 @@ body {
     width: 80%;
     margin: 0 auto; } }
 
-.primary-btn {
-  display: block;
-  width: 280px;
-  height: 60px;
-  color: #ffffff;
-  font: 700 18px/60px "OpenSans", sans-serif;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
-  background: #8824cd;
-  border-radius: 30px;
-  text-align: center; }
-  .primary-btn:hover {
-    color: #8824cd;
-    background: #ffffff;
-    border: 2px solid #8824cd;
-    transition: all .4s ease-in; }
-
 .intro {
   background: url("../../img/head-bg.png") no-repeat;
   background-size: cover;
   min-height: 100vh; }
   .intro .hero {
-    margin-top: 215px;
     max-width: 705px;
     min-width: 300px;
     width: auto;
+    margin: 215px auto 0 auto;
     text-align: center; }
     .intro .hero .title {
       font: 400 50px "OpenSans", sans-serif; }
@@ -131,7 +117,6 @@ body {
     .header .nav {
       display: none; }
       .header .nav li a {
-        border-top: 1px solid #ccc;
         background: #ffffff;
         color: #090909; }
         .header .nav li a:hover {
@@ -146,3 +131,81 @@ body {
       margin-top: 20px; }
       .header #touch-menu .fa-bars {
         font-size: 22px; } }
+
+@media (min-width: 970px) {
+  .intro .hero {
+    margin: 275px auto 0 auto; } }
+
+@media (min-width: 1170px) {
+  .intro .hero {
+    margin: 275px 0 0 0;
+    text-align: right;
+    overflow: hidden; }
+    .intro .hero .primary-btn {
+      margin-left: 290px; } }
+
+.primary-btn {
+  display: block;
+  width: 280px;
+  height: 60px;
+  color: #ffffff;
+  font: 700 18px/60px "OpenSans", sans-serif;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  background: #8824cd;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer; }
+  .primary-btn:hover {
+    color: #8824cd;
+    background: #ffffff;
+    transition: all .4s ease-in; }
+
+.toggle-btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer; }
+
+.toggle-btn .icon-1 {
+  margin-bottom: 2px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #fff; }
+
+.toggle-btn .icon-2 {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: red; }
+
+/*
+вся магия по превращению в "х"
+*/
+.toggle-switch {
+  background: transparent; }
+  .toggle-switch span {
+    transition: background 0 0.3s; }
+    .toggle-switch span::before, .toggle-switch span::after {
+      transition-duration: 0.3s, 0.3s;
+      transition-delay: 0.3s, 0; }
+    .toggle-switch span::before {
+      transition-property: top, transform; }
+    .toggle-switch span:after {
+      transition-property: bottom, transform; }
+
+.toggle-switch.active span {
+  background: none; }
+  .toggle-switch.active span::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(45deg); }
+  .toggle-switch.active span::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-45deg); }
+  .toggle-switch.active span::before, .toggle-switch.active span::after {
+    transition-delay: 0, 0.3s; }

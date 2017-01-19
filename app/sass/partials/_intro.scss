@@ -3,10 +3,10 @@
 	background-size: cover;
 	min-height: 100vh;
 	.hero {
-		margin-top: 215px;
 		max-width: 705px;
 		min-width: 300px;
 		width: auto;
+		margin: 215px auto 0 auto;
 		text-align: center;
 
 		.title {font: 400 50px $secondary_font;}
@@ -19,8 +19,6 @@
 			margin: 50px auto 20px auto;
 		}
 	}
-
-
 }
 .header {
 	height: 100px;
@@ -32,7 +30,6 @@
 		float: left;
 		img {width: 40px;}
 	}
-
 
 	.nav {
 		display: flex;
@@ -55,7 +52,6 @@
 	@media (min-width: 320px) and (max-width: 970px) {
 		.nav {display: none;
 			li a {
-				border-top: 1px solid #ccc;
 				background: $secondary_font_color;
 				color: $primary_font_color;
 
@@ -73,6 +69,26 @@
 			margin-top: 20px;
 
 			.fa-bars {font-size: 22px;}
+		}
+	}
+}
+@media (min-width: 970px) {
+	.intro {
+		.hero {
+			margin: 275px auto 0 auto;
+		}
+	}
+}
+@media (min-width: 1170px) {
+	.intro {
+		.hero {
+			margin: 275px 0 0 0;
+			text-align: right;
+			overflow: hidden;
+
+			.primary-btn {
+			margin-left: 290px;
+			}
 		}
 	}
 }

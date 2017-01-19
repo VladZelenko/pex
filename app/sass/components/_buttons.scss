@@ -8,11 +8,11 @@
 	background: #8824cd;
 	border-radius: 30px;
 	text-align: center;
+	cursor: pointer;
 
 	&:hover {
 		color: #8824cd;
 		background: $secondary_font_color;
-		border: 2px solid #8824cd;
 		transition: all .4s ease-in;
 	}
 }
