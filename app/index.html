@@ -8,7 +8,44 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+	<section class="intro">
+		<div class="nav-box">
+			<div class="container">
+				<div class="flexbox">
+					<h1 class="logo">
+						<a href="#">
+							<img src="img/pex-logo.png" alt="Logotype">
+						</a>
+					</h1>
+					<nav class="top-nav">
+						<a href="#" class="open-btn" id="open-btn-nav" onclick="openNav()">
+							<span class="line"></span>
+							<span class="line"></span>
+							<span class="line"></span>
+						</a>
+						<div id="nav" class="overlay">
+							<a href="#" class="close-btn" onclick="closeNav()">&times;</a>
+							<ul class="overlay__content">
+								<li><a href="#">About</a></li>
+								<li><a href="#">How It Works</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">Contact</a></li>
+								<li>
+									<form class="navbar-form navbar-left" role="search">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Search">
+										</div>
+										<button type="submit" class="btn btn-default">Отправить</button>
+									</form>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section>
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 	<script src="js/common.js"></script>

@@ -1,94 +1,29 @@
 .intro {
-	background: url('../../img/head-bg.png')no-repeat;
-	background-size: cover;
+	width: 100%;
 	min-height: 100vh;
-	.hero {
-		max-width: 705px;
-		min-width: 300px;
-		width: auto;
-		margin: 215px auto 0 auto;
-		text-align: center;
-
-		.title {font: 400 50px $secondary_font;}
-		p {
-			padding-bottom: 70px;
-			font: 400 12px $secondary_font;
-		}
-		.primary-btn {
-			width: 280px;
-			margin: 50px auto 20px auto;
-		}
-	}
+	background: url("../../img/head-bg.png") center center no-repeat;
+	.nav-box {border-bottom: 1px solid rgba(255,255,255, .1);}
 }
-.header {
-	height: 100px;
-	padding: 30px;
-	border-bottom: 1px solid #372a37;
-	h1.logo {
-		margin-top: 10px;
-		display:inline;
-		float: left;
-		img {width: 40px;}
-	}
 
-	.nav {
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-	}
-
-	.nav li a,
-	#touch-menu {
-		display: block;
-		padding: 10px 15px;
+//nav menu
+.close-btn {display: none;}
+.flexbox {
+	min-height: 100px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	.logo {margin: 0;}
+}
+.overlay__content {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	li a{
+		padding: 5px 20px;
 		color: $secondary_font_color;
-		font: 700 14px/24px $primary_font;
-	}
-
-	.nav li a:hover {border-bottom: 2px solid $secondary_font_color;}
-	#touch-menu:hover {color: $secondary_font_color;}
-	#touch-menu {display: none;}
-
-	@media (min-width: 320px) and (max-width: 970px) {
-		.nav {display: none;
-			li a {
-				background: $secondary_font_color;
-				color: $primary_font_color;
-
-				&:hover {
-					background: #f0f0f0;
-					color: $primary_font_color;
-					border-left: 3px solid #8824cd;
-				}
-			}
-		}
-		.nav li:first-child a {border-top: none;}
-		#touch-menu {
-			display: flex;
-			justify-content: flex-end;
-			margin-top: 20px;
-
-			.fa-bars {font-size: 22px;}
-		}
-	}
-}
-@media (min-width: 970px) {
-	.intro {
-		.hero {
-			margin: 275px auto 0 auto;
-		}
-	}
-}
-@media (min-width: 1170px) {
-	.intro {
-		.hero {
-			margin: 275px 0 0 0;
-			text-align: right;
-			overflow: hidden;
-
-			.primary-btn {
-			margin-left: 290px;
-			}
-		}
+		font: 600 18px $primary_font;
+		cursor: pointer;
+		&:hover {text-decoration: none;}
 	}
 }
