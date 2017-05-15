@@ -2,15 +2,15 @@
 	width: 100%;
 	min-height: 510px;
 	background-color: #2e3b4e;
-	padding: 80px 0 140px 0;
+	padding: 80px 0 70px 0;
 	color: $secondary_font_color;
 	&:after {
 		display: block;
 		position: relative;
-		top: 178px;
+		top: 106px;
 		content: '';
 		width: 140px;
-		height: 75px;
+		height: 72px;
 		margin: 0 auto;
 		background: url('../../img/hero-part.png');
 	}
@@ -20,5 +20,9 @@
 		font: 700 15px $primary_font;
 		text-transform: uppercase;
 	}
-	p {font: 500 15px/26px $primary_font;}
+	p {
+		margin: 0;
+		padding-bottom: 70px;
+		font: 500 15px/26px $primary_font;
+	}
 }
