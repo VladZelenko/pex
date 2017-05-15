@@ -9,10 +9,23 @@
 	border-radius: 30px;
 	text-align: center;
 	cursor: pointer;
-
 	&:hover {
 		color: #8824cd;
 		background: $secondary_font_color;
+		transition: all .4s ease-in;
+	}
+}
+.secondary-btn {
+	display: block;
+	width: 340px;
+	margin: 30px auto 0 auto;
+	border-radius: 30px;
+	background: $secondary_font_color;
+	color: #d54c63;
+	font: 700 18px/60px $primary_font;
+	&:hover, &:focus {
+		background: #8824cd;
+		color: $secondary_font_color;
 		transition: all .4s ease-in;
 	}
 }

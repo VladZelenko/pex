@@ -8814,6 +8814,19 @@ th.hide-for-touch {
     background: #ffffff;
     transition: all .4s ease-in; }
 
+.secondary-btn {
+  display: block;
+  width: 340px;
+  margin: 30px auto 0 auto;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #d54c63;
+  font: 700 18px/60px "Open Sans", sans-serif; }
+  .secondary-btn:hover, .secondary-btn:focus {
+    background: #8824cd;
+    color: #ffffff;
+    transition: all .4s ease-in; }
+
 @media only screen and (max-width: 750px) {
   .overlay {
     position: fixed;
@@ -8916,3 +8929,19 @@ th.hide-for-touch {
     margin: 0;
     padding-bottom: 70px;
     font: 500 15px/26px "Open Sans", sans-serif; }
+
+.section-3 {
+  padding: 155px 0 195px 0;
+  width: 100%;
+  min-height: 565px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(rgba(213, 76, 99, 0.7), rgba(213, 76, 99, 0.7)), url("../../img/hero-img-3.jpg"); }
+  .section-3 .row {
+    max-width: 575px; }
+  .section-3 .title {
+    color: #ffffff;
+    font: 300 35px "Open Sans", sans-serif; }
+  .section-3 p {
+    margin: 0;
+    font: 400 15px/26px "Open Sans", sans-serif; }

@@ -26,3 +26,20 @@
 		font: 500 15px/26px $primary_font;
 	}
 }
+.section-3 {
+	padding: 155px 0 195px 0;
+	width: 100%;
+	min-height: 565px;
+	text-align: center;
+	color: $secondary_font_color;
+	background: linear-gradient(rgba(0213, 76, 99, .7), rgba(213, 76, 99, .7)), url('../../img/hero-img-3.jpg');
+	.row {max-width: 575px;}
+	.title {
+		color: $secondary_font_color;
+		font: 300 35px $primary_font;
+	}
+	p {
+		margin: 0;
+		font: 400 15px/26px $primary_font;
+	}
+}
