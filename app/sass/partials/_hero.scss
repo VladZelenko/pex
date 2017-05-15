@@ -1,0 +1,21 @@
+.hero {
+	width: 100%;
+	min-height: 510px;
+	background-color: #2e3b4e;
+	padding: 80px 0 140px 0;
+	color: $secondary_font_color;
+	&:after {
+		display: block;
+		content: '';
+		width: 140px;
+		height: 70px;
+		background: url('../../img/hero-part.png');
+	}
+	.hero-title {
+		margin-bottom: 35px;
+		color: $secondary_font_color;
+		font: 700 15px $primary_font;
+		text-transform: uppercase;
+	}
+	p {font: 500 15px/26px $primary_font;}
+}

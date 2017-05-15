@@ -8798,37 +8798,6 @@ th.hide-for-touch {
   th.show-for-print {
     display: table-cell !important; } }
 
-.intro {
-  width: 100%;
-  min-height: 100vh;
-  background: url("../../img/head-bg.png") center center no-repeat; }
-  .intro .nav-box {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
-
-.close-btn {
-  display: none; }
-
-.flexbox {
-  min-height: 100px;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center; }
-  .flexbox .logo {
-    margin: 0; }
-
-.overlay__content {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center; }
-  .overlay__content li a {
-    padding: 5px 20px;
-    color: #ffffff;
-    font: 600 18px "Droid Sans", sans-serif;
-    cursor: pointer; }
-    .overlay__content li a:hover {
-      text-decoration: none; }
-
 .primary-btn {
   display: block;
   width: 280px;
@@ -8891,3 +8860,54 @@ th.hide-for-touch {
       background: #000; }
     #open-btn-nav .line:nth-child(2) {
       margin: 3px 0; } }
+
+.intro {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../img/head-bg.png") center center no-repeat; }
+  .intro .nav-box {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.close-btn {
+  display: none; }
+
+.flexbox {
+  min-height: 100px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center; }
+  .flexbox .logo {
+    margin: 0; }
+
+.overlay__content {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center; }
+  .overlay__content li a {
+    padding: 5px 20px;
+    color: #ffffff;
+    font: 600 18px "Open Sans", sans-serif;
+    cursor: pointer; }
+    .overlay__content li a:hover {
+      text-decoration: none; }
+
+.hero {
+  width: 100%;
+  min-height: 510px;
+  background-color: #2e3b4e;
+  padding: 80px 0 140px 0;
+  color: #ffffff; }
+  .hero:after {
+    display: block;
+    content: '';
+    width: 140px;
+    height: 70px;
+    background: url("../../img/hero-part.png"); }
+  .hero .hero-title {
+    margin-bottom: 35px;
+    color: #ffffff;
+    font: 700 15px "Open Sans", sans-serif;
+    text-transform: uppercase; }
+  .hero p {
+    font: 500 15px/26px "Open Sans", sans-serif; }
