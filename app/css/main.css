@@ -8900,9 +8900,12 @@ th.hide-for-touch {
   color: #ffffff; }
   .hero:after {
     display: block;
+    position: relative;
+    top: 178px;
     content: '';
     width: 140px;
-    height: 70px;
+    height: 75px;
+    margin: 0 auto;
     background: url("../../img/hero-part.png"); }
   .hero .hero-title {
     margin-bottom: 35px;
